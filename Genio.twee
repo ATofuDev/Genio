@@ -1,0 +1,293 @@
+:: StoryTitle
+Genio
+
+
+:: StoryData
+{
+  "ifid": "26959349-1146-4F9E-ABE6-CD393D50BF14",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Untitled Passage",
+  "zoom": 1
+}
+
+
+:: Buscar cómo regresar a casa {"position":"1387.5,850","size":"100,100"}
+Aquél encuentro te deja perturbado, ¿estabas dispuesto a cambiar cualquier cosa a costa de cumplir tus deseos?
+
+Llegas nuevamente a casa, te tomaste tu tiempo. Te costó reunir el dinero suficiente para pagar un viaje de regreso una vez llegaste a la civilización. 
+
+Regresas a tu hogar tranquilamente, tu perro te recibe y tu familia te llama, estaban preocupados porque te fuiste. Están felices de verte, de que estés vivo. 
+
+No pudiste desear nada, sin embargo estás feliz con la vida.
+
+[[No había nada qué desear]].
+
+
+:: Debo continuar {"position":"400,0","size":"100,100"}
+Continuas caminando por un buen rato, no sabes cómo pero la emoción de por fin hallar lo que tanto llevas buscando te da un segundo aire. 
+
+Pasan las horas, el sol comienza a ocultarse y el viento refresca tu frente. Tras escalar una duna, te encuentras con unas ruinas de alguna civilización antigua. 
+
+Sin nada que perder, caminas hacia allá con la intención de [[encontrar un pequeño refugio para pasar la noche.]]
+
+
+:: Dejar la madera en su lugar {"position":"600,100","size":"100,100"}
+Dejas la madera, finalmente no sabes quién la trajo hasta aquí ni por qué. 
+
+Continuas explorando las ruinas y encuentras un poco de oro, el suficiente como para poder pagar un viaje de regreso a casa y vivir bien el resto de tu vida. 
+
+[[Tomar el oro, descansar e irte a la mañana siguiente]]
+
+[[Sólo tomar el oro]]
+
+
+
+
+:: Deseo deseos infinitos. {"position":"1000,800","size":"100,100"}
+"Ahora puedes pedirme todo lo que desees. "
+
+Sientes que estás olvidando algo importante...
+
+"Bien, ¿cuál es tu siguiente deseo?"
+
+[[Quiero ser el hombre más rico y poderoso del mundo]]
+
+
+:: Final 1 {"position":"75,475","size":"100,100"}
+Final 1: Me Rindo
+
+[[Regresar al inicio|Untitled Passage]]
+
+
+:: Frotar la lámpara {"position":"1200,400","size":"100,100"}
+Comienzas a frotar la lámpara con tus manos, quitando capas de polvo y arena de encima. 
+Puedes ver tu reflejo en ella, tras unos instantes humo comienza a brotar de la boquilla del objeto. 
+[[Tras unos segundos, un genio aparece.]] 
+
+
+:: La vida es buena. {"position":"575,875","size":"100,100"}
+Final 4: Soltar
+
+[[Regresar al inicio |Untitled Passage]]
+
+
+:: No había nada qué desear {"position":"1387.5,975","size":"100,100"}
+Final 6: El verdadero tesoro.
+
+[[Regresar al Inicio|Untitled Passage]]
+
+
+:: No me importa, quiero pedirte mis tres deseos {"position":"1050,575","size":"100,100"}
+"Entonces, que así sea, dime tu primer deseo."
+
+[[Deseo deseos infinitos.]]
+
+
+
+
+:: No, si ya no puedo recordar de dónde vengo, prefiero controlar todo a mi alrededor, quiero más poder, ahora sobre el universo {"position":"600,1200","size":"100,100"}
+"Bien, entonces que así sea"
+
+Tras un chasquido, el genio te muestra galaxias, el espacio, las estrellas, planetas infinitos. 
+
+(seq-link: "Estrellar galaxias", "")(more:)[= Dos galaxias se estrellan y realizan una explosión que sólo tú puedes presenciar. Es majestuoso. Tú sabes que dentro de ellas había vida inteligente que borraste en un instante, por un capricho. Pero no sientes nada.
+
+"Veo que te gusta el poder, pero creo que hasta aquí llega nuestra parte del contrato de los deseos, querido comotellames"
+
+(seq-link: "¿Por qué? ¡Quiero más!","El genio te mira, luego realiza una mueca de satisfacción.")(more:)[= 
+"Creo que no recuerdas quién soy, tampoco puedo verte, no estoy cumpliendo los deseos de nadie ahora, he quedado libre de mis tareas."
+
+No recuerdas quién eres, estás solo en el vacío del espacio y no sabes por qué estás haciendo lo que estás haciendo. 
+
+"Espero que disfrutes de tu nueva estancia quiénseas, yo me iré a descansar en algún otro lugar".
+
+[[¡No me dejes!]]
+
+[[Obligarlo a quedarse, tienes todo el poder del mundo]]
+
+
+:: Obligarlo a quedarse, tienes todo el poder del mundo {"position":"800,1325","size":"100,100"}
+Intentas usar todo tu poder para destruir a esta persona que te ha dejado en la más absoluta soledad, lo aplastas, lo deformas, destruyes sus átomos. 
+
+Sin embargo, se vuelve a reconstruir. 
+
+"No tienes poder sobre mí, jamás se te ocurrió pedirlo"
+
+[[¿Pedir qué?]]
+
+
+:: Pensándolo mejor... **Encerrar al genio de nuevo** {"position":"1575,625","size":"100,100"}
+De alguna forma intuyes que para atrapar al genio debes extenderla hacia él. El genio sonríe, satisfecho, mientras es absorbido por la lámpara. 
+
+"Has tomado la mejor decisión." Dice el genio antes de desaparecer por completo.
+
+Sientes que has hecho las cosas bien. 
+(if:(history: where its name contains "Sólo tomar el oro")'s length is 1)[[Irse con el oro|Regresar a casa]]
+
+(else:) [= 
+[[Buscar cómo regresar a casa]]
+
+
+:: Prepararme para el viaje de regreso {"position":"800,600","size":"100,100"}
+(after:2s)[Con el oro recolectado y nuevas energías, te dispones a viajar de regreso, finalmente puede que lo único que necesitaras fuera una oportunidad económica y admitir que la búsqueda de deseos era sólo una fantasía tonta.]
+
+[[Regresar a casa]]
+
+
+:: Quiero ser el hombre más rico y poderoso del mundo {"position":"800,900","size":"100,100"}
+¿Cómo es que te llamabas? ¿Cómo eran tus amigos? ¿Tenías una pareja antes llegar aquí? No importa por el momento, ¡puedes pedir deseos infinitos!
+
+"Todo el mundo te reconoce y alaba, además de que tienes una fortuna esperándote en casa, eso debe ser todo lo que un humano como tú debería pedir, ¿no?"
+
+[[¿Bromeas? ¡Quiero más! ¡Quiero un hárem completo para mí!]]
+
+
+
+:: Realizar una fogata {"position":"900,200","size":"100,100"}
+Cuando comienzas a quitar los trozos de madera con la intención de calentarte, notas un pequeño artefacto dorado. Tras un rato notas que es una lámpara, posiblemente sea lo que estabas buscando...
+[[Frotar la lámpara]]
+[[Sólo eran tonterias, prefiero usar la madera]]
+
+
+:: Regresar a casa {"position":"700,700","size":"100,100"}
+Pudiste regresar a casa y fundar una empresa con el oro que conseguiste, además de volverte una pequeña celebridad por un momento ya que tus seres queridos te daban por muerto. 
+
+Con el tiempo, conociste a alguien y se enamoraron. 
+
+[[La vida es buena.]]
+
+
+:: Rendirme [Rendirme] {"position":"100,250","size":"100,100"}
+"¿Sabes qué? Es suficiente." Te dices mientras tropiezas en la arena, tus rodillas arden, intentas levantarte pero caes torpemente de cara contra el ardiente suelo del desierto. Un poco de
+arena entra en tu boca y nariz. Pero no te importa. Sólo quieres que esto termine pronto.
+Si cierras un poco los ojos [[Tal vez si sólo descansas un poco...->Final 1]]
+
+
+
+
+:: Ser Altruista {"position":"400,500","size":"100,100"}
+Con lo que quedó del oro, comenzaste a buscar cómo ayudar a la gente que te ayudó. Mejoraste la infraestructura del lugar y la calidad de vida mejoró. Cuando algunas personas quisieron robarte el pueblo los detuvo y mantuvieron la zona en paz.
+
+[[Viviste tranquilamente el resto de tus días]]
+
+
+:: Ser egoísta {"position":"700,425","size":"100,100"}
+Preferiste usar el oro sólo para ti a pesar de poder ayudar a las personas de regreso, comenzaste a sobornar a la gente y pagaste para que algunos mercenarios te protegieran. 
+
+[[Viviste despilfarrando todo mientras los demás lo veían]]
+
+
+:: Sólo eran tonterias, prefiero usar la madera {"position":"850,425","size":"100,100"}
+Enciendes la madera e ignoras el artefacto.
+Pasas una noche cálida y no sucede gran cosa. 
+
+Al despertar, te sientes descansado y lleno de energía. Aún te quedaban un poco de raciones, si las administras bien podrías llegar de nuevo a la civilización.
+
+[[Prepararme para el viaje de regreso]]
+
+
+:: Sólo tomar el oro {"position":"700,300","size":"100,100"}
+(if:(history: where its name contains "Sólo tomar el oro")'s length is 1)[Ahora tienes un montón de oro para después.]
+
+[[Regresar a la madera y hacer una fogata|Realizar una fogata]]
+
+
+:: Te quedas en silencio... {"position":"975,1175","size":"100,100"}
+A pesar de haber pedido todo lo que pudiste haber querido, te diste cuenta que poco a poco tu cabeza se quedaba en blanco. Continuaste pidiendo más cosas, como convertir las ruinas en un palacio increíble llenos de lujos, sin embargo no recordabas por qué seguías pidiendo cosas.
+
+Un día simplemente no reconociste quién era esa persona en el espejo. Y por qué estabas rodeado de tantas cosas. Te convertiste en una cáscara vacía. 
+
+Final 7: Amnesia.
+
+[[Regresar al inicio|Untitled Passage]]
+
+
+:: Tomar el oro, descansar e irte a la mañana siguiente {"position":"500,300","size":"100,100"}
+Pasas algo de frío ya que no usaste la madera, pero te sientes con la energía suficiente para continuar tu viaje a la mañana siguiente. 
+
+Con lo poco que lograste descansar, llegaste a un pueblo en el que fuiste bien recibido y te cuidaron. Con el oro que conseguiste compraste un pequeño terreno. 
+
+[[Ser Altruista]]
+
+[[Ser egoísta]]
+
+
+:: Tras un chasquido, él desaparece. {"position":"400,1600","size":"100,100"}
+Final 5: Infinitamente Vacío
+
+[[Volver al inicio de todo|Untitled Passage]]
+
+
+:: Tras unos segundos, un genio aparece. {"position":"1450,500","size":"100,100"}
+"Tonto mortal, me dejaron aquí olvidado para que nadie más volviera a encontrarme, en cambio tú, sabiendo lo que sucederá, me liberas."
+
+"Yo cumplo tres deseos a las personas, cualquier cosa que pidan, la tienen. Sin embargo siempre me llevo algo de ti."
+El genio sonríe después de su aviso.
+
+"¿Aún así, deseas continuar?" 
+
+[[No me importa, quiero pedirte mis tres deseos]]
+
+[[Pensándolo mejor... **Encerrar al genio de nuevo**]]
+
+
+
+:: Untitled Passage {"position":"225,100","size":"100,100"}
+Te encuentras en un desierto, las cosas no salieron como lo esperabas, te estás quedando sin agua y la comida se acabó hace dos días. Comienzas a pensar que la búsqueda de aquella lámpara era en verdad una misión fantasiosa.
+Sientes que tu energía flaquea, pero aún puedes intentar continuar con tu viaje.
+¿Qué pretendes hacer?
+[[Rendirme]]
+[[Debo continuar]]
+
+
+:: Viviste despilfarrando todo mientras los demás lo veían {"position":"575,500","size":"100,100"}
+Tras unos años, un grupo de ladrones decidió que tal vez era más fácil obtener el oro mediante la violencia. 
+
+Entraron a tu casa a punta de disparos, mataron a tus mercenarios y últimamente, a ti. 
+
+Final 3: Ladrón que roba a ladrón.
+
+[[Volver al inicio|Untitled Passage]]
+
+
+:: Viviste tranquilamente el resto de tus días {"position":"200,500","size":"100,100"}
+Final 2: Recibir y Dar.
+
+[[Volver al inicio|Untitled Passage]]
+
+
+:: encontrar un pequeño refugio para pasar la noche. {"position":"750,0","size":"100,100"}
+Una vez te acomodas en un rincón notas que hay una pila de madera, como si alguien hubiera estado allí hace no mucho. Sin embargo no encuentras rastros de vida humana en ninguna parte. 
+
+[[Realizar una fogata]]
+[[Dejar la madera en su lugar]]
+
+
+:: ¡No me dejes! {"position":"500,1400","size":"100,100"}
+"Creo que no lo pediste, no estoy atado a ti en ningún sentido, entidad. No lo pediste"
+
+[[¿Pedir qué?]]
+
+
+
+
+:: ¿Bromeas? ¡Quiero más! ¡Quiero un hárem completo para mí! {"position":"800,1025","size":"100,100"}
+Estás rodeado de mujeres, sin embargo no reconoces a ninguna, no puedes sentir empatía por ninguna de ellas y a pesar de su perfección no puedes sentir placer. 
+
+"Y, ¿sabes? seguimos en esta ruina olvidada, ¿dónde era que vivías?"
+
+Ya no lo recuerdas, ¿por qué estás aquí?
+
+"¿Esto es todo lo que quieres?"
+
+[[No, si ya no puedo recordar de dónde vengo, prefiero controlar todo a mi alrededor, quiero más poder, ahora sobre el universo]]
+
+[[Te quedas en silencio...]]
+
+
+:: ¿Pedir qué? {"position":"1125,1575","size":"100,100"}
+"Nada, supongo que ya lo olvidaste. 
+Debiste enterarte que estabas perdiendo la memoria conforme más pedías, sin embargo tu ambición te llevó a esto. Disfruta del infinito, de ser eterno y todo poderoso."
+
+[[Tras un chasquido, él desaparece.]] 
